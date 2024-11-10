@@ -24,7 +24,7 @@ async function getUserBalance(): Promise<{
     );
 
     return { balance };
-  } catch (error) {
+  } catch {
     return { error: "Database error" };
   }
 }
