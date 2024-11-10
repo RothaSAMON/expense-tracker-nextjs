@@ -19,7 +19,8 @@ async function getUserBalance(): Promise<{
     });
 
     const balance = transaction.reduce(
-      (sum, transaction) => sum + transaction.amount,
+      (sum: number, transaction: { amount: number }) =>
+        sum + transaction.amount,
       0
     );
 

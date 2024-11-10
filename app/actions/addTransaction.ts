@@ -10,7 +10,7 @@ interface TransactionData {
 }
 
 interface TransactionResult {
-  // data?: TransactionData;
+  data?: TransactionData;
   error?: string;
 }
 
